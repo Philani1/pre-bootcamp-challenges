@@ -6,7 +6,8 @@ def area(a, b, c):
     if(a == b and b == c):
         area = ((b*b) * (3**(1/2.0)/4))
     else:
-        area = (1/2)*(a+b+c)
+        s = (1/2)*(a+b+c)
+        area = (s*(s-a)*(s-b)*(s-c))**(1/2)
     return area
 
 Area = area(a, b, c)
