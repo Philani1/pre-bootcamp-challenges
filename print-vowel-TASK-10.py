@@ -1,4 +1,4 @@
-any_string = input("Enter any string: ")
+any_string = "Everything"
 
 
 def print_vowel(any_string):
