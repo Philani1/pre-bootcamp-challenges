@@ -1,5 +1,5 @@
-f_string = input("Enter first string: ")
-s_string = input("Enter second string: ")
+f_string = "house"
+s_string = "computers"
 
 def common_char(f_string, s_string):
     output = ""
