@@ -1,12 +1,9 @@
-any_string = "Everything"
-
-
 def print_vowel(any_string):
     output = ""
-    for vow in any_string:
-        if vow in 'aeiou':
-            output +=vow
+    for vowel in any_string.lower():
+        if vowel in 'aeiou':
+            output +=vowel
     return output
     
-print_vow = print_vowel(any_string.lower())
+print_vow = print_vowel("HELLO")
 print(print_vow)
