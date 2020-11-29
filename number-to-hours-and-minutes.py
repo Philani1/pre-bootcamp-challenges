@@ -1,4 +1,4 @@
-def number_to_HM(num):
+def number_to_hours_and_min(num):
     hours = num/60
     minutes = num%60
     h_unit = ""
@@ -16,4 +16,4 @@ def number_to_HM(num):
     return f"{int(hours)} {h_unit}, {minutes} {m_unit}"
 
 num = int(71)
-print(number_to_HM(num))
+print(number_to_hours_and_min(num))
