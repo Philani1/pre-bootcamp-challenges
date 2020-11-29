@@ -1,6 +1,3 @@
-f_string = "house"
-s_string = "computers"
-
 def common_char(f_string, s_string):
     output = ""
     for i in range(len(s_string)):
@@ -9,6 +6,6 @@ def common_char(f_string, s_string):
                 output += f_string[j] + ", "
     return output
 
-common_letters = common_char(f_string, s_string)
+common_letters = common_char("house", "computers")
 
 print(f"Common letters: {common_letters}" )
