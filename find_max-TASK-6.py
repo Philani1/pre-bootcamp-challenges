@@ -1,11 +1,9 @@
 def find_max(num1, num2, num3):
     numbers_list = [num1, num2, num3]
-    max_no = 0
+    max_no = num1
     for i in range(len(numbers_list)):
         num = numbers_list[i]
-        if max_no == 0:
-            max_no = num
-        elif num > max_no:
+        if num > max_no:
             max_no = num
     return max_no
 
