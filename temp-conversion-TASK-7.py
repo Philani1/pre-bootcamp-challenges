@@ -1,17 +1,15 @@
 def celsius_to_fahrenheit(temp_celsius):
-    fahrenheit = (temp_celsius * 1.8) + 32
-    return fahrenheit
-
-def  fahrenheit_to_celsius(temp_fahrenheit):
-    celsius = (temp_fahrenheit - 32) / 1.8
-    return celsius  
+    cel_to_fahrenheit = (temp_celsius * 1.8) + 32
+    return cel_to_fahrenheit
 
 
-temp_celsius = float(30)
-temp = celsius_to_fahrenheit(temp_celsius)
-print(f"The temperature {temp_celsius} in celsius is: {temp} in Fahrenheit")
+def fahrenheit_to_celsius(temp_fahrenheit):
+    fahren_to_celsius = (temp_fahrenheit - 32) / 1.8
+    return fahren_to_celsius
 
-temp_fahrenheit = float(86)
-temp = fahrenheit_to_celsius(temp_fahrenheit)
-print(f"The temperature {temp_fahrenheit} in fahrenheit is: {temp} in Celsius")
 
+if __name__ == "__main__":
+    print(
+        f"The temperature {30} in celsius is: {celsius_to_fahrenheit(30)} in Fahrenheit \
+        \nThe temperature {86} in fahrenheit is: {fahrenheit_to_celsius(86)} in Celsius"
+    )
