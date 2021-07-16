@@ -7,5 +7,7 @@ def find_max(num1, num2, num3):
             max_no = num
     return max_no
 
-maximum_number = find_max(3, 4, 5)
-print(f"Maximum value is: {maximum_number}")
+
+if __name__ == "__main__":
+    maximum_number = find_max(3, 4, 5)
+    print(f"Maximum value is: {maximum_number}")
