@@ -1,19 +1,21 @@
 def number_to_hours_and_min(num):
-    hours = num/60
-    minutes = num%60
-    h_unit = ""
-    m_unit = ""
+    hours = num / 60
+    minutes = num % 60
+    hour_unit = ""
+    minute_unit = ""
     if int(hours) <= 1:
-        h_unit = "hour"
+        hour_unit = "hour"
     else:
-        h_unit = "hours"
-        
+        hour_unit = "hours"
+
     if minutes <= 1:
-        m_unit = "minute"
+        minute_unit = "minute"
     else:
-        m_unit = "minutes"    
+        minute_unit = "minutes"
 
-    return f"{int(hours)} {h_unit}, {minutes} {m_unit}"
+    return f"{int(hours)} {hour_unit}, {minutes} {minute_unit}"
 
-num = int(71)
-print(number_to_hours_and_min(num))
+
+if __name__ == "__main__":
+    num = int(71)
+    print(number_to_hours_and_min(num))
