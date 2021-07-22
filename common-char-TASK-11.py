@@ -1,11 +1,11 @@
-def common_char(f_string, s_string):
+def common_char(first_string, second_string):
     output = ""
-    for i in range(len(s_string)):
-        for j in range(len(f_string)):
-            if s_string[i] == f_string[j]:
-                output += f_string[j] + ", "
+    for character_sec in range(len(second_string)):
+        for character_first in range(len(first_string)):
+            if second_string[character_sec] == first_string[character_first]:
+                output += first_string[character_first] + ", "
     return output
 
-common_letters = common_char("house", "computers")
 
-print(f"Common letters: {common_letters}" )
+if __name__ == "__main__":
+    print(f"Common letters: {common_char('house', 'computers')}")
