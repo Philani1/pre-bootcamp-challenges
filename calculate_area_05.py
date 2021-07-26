@@ -7,8 +7,8 @@ def calculate_area(side_a, side_b, side_c):
         * (semi_perimetre - side_c)
     ) ** (1 / 2)
 
-    print(f"Area of a triangle is: {area} cm squared")
+    return area
 
 
 if __name__ == "__main__":
-    area = calculate_area(3, 4, 5)
+    print(calculate_area(3, 4, 5))
