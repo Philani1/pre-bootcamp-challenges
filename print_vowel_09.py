@@ -3,7 +3,7 @@ def print_vowel(any_string):
     for vowel in any_string.lower():
         if vowel in "aeiou" and vowel:
             output += vowel
-    output = "".join(sorted(set(output), key=output.index))
+    output = ", ".join(sorted(set(output), key=output.index))
     print(output)
 
 
