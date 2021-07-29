@@ -1,9 +1,9 @@
 def print_vowel(any_string):
     output = ""
     for vowel in any_string.lower():
-        if vowel in "aeiou" and vowel:
+        if vowel in "aeiou":
             output += vowel
-    output = ", ".join(sorted(set(output), key=output.index))
+    output = "Vowels: " + ", ".join(sorted(set(output), key=output.index))
     print(output)
 
 
