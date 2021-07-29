@@ -3,12 +3,12 @@ def number_to_hours_and_min(num):
     minutes = num % 60
     hour_unit = ""
     minute_unit = ""
-    if int(hours) <= 1:
+    if int(hours) == 1:
         hour_unit = "hour"
     else:
         hour_unit = "hours"
 
-    if minutes <= 1:
+    if minutes == 1:
         minute_unit = "minute"
     else:
         minute_unit = "minutes"
